@@ -37,13 +37,13 @@ label start:
     
     "Une petite fille est perdue seule dans les bois. Les larmes aux yeux, elle est triste. Elle se demande si elle va réussir à retrouver son chemin."
     
-    play sound "Sons/rouge-gorge.ogg"
+    play music "Sons/rouge-gorge.ogg"
     
     a "Euh ... y a quelqu'un ? S'il vous plaît, aidez-moi"
     
     "Elle entend du bruit. Elle voit un serpent sortir de derrière les arbres."
     
-    play sound "Sons/snake.ogg"
+    play music "Sons/snake.ogg"
     
     show serpent at right
     
@@ -57,7 +57,7 @@ label start:
 
     hide serpent
     show lapin at right
-    play sound "Sons/rouge-gorge.ogg"
+    play music "Sons/rouge-gorge.ogg"
     
     l "Ne l'écoute pas petite fille. Ce serpent est un menteur né. Contrairement à ce qu'il dit, je connais vraiment tous les coins de cette forêt."
     
@@ -74,7 +74,7 @@ menu :
         jump scene_lapin
         
 label scene_serpent:
-    play sound "Sons/champs_fleurs.ogg"
+    play music "Sons/champs_fleurs.ogg"
     scene champs fleurs
     show aelita impressionnee at left
     
@@ -86,13 +86,12 @@ label scene_serpent:
     show loup at right
     show aelita hesitante at left
     
-    play sound "Sons/chien.ogg"
     lo "J'ai entendu dire que tu cherchais ton chemin. Tu as besoin d'aide mon enfant ?"
     
     "La petite fille n'a pas le temps de réagir. Une boule de poils apparaît. C'est un chat."
     
     hide loup
-    play sound "Sons/cat.ogg"
+    play music "Sons/cat.ogg"
     show chat at right
     
     c "Je peux aussi t'aider à retrouver ton chemin. À toi de choisir."
@@ -114,7 +113,7 @@ menu :
         jump scene_loup
 
 label scene_lapin:
-    play sound "Sons/scene_lapin.ogg"
+    play music "Sons/scene_lapin.ogg"
     scene taniere lapin
     show aelita frissonnante at left
     
@@ -137,7 +136,7 @@ label scene_lapin:
     
     hide loup
     show chat at right
-    play sound "Sons/cat.ogg"
+    play music "Sons/cat.ogg"
     
     c "Je peux aussi t'aider à retrouver ton chemin. À toi de choisir."
     
@@ -158,7 +157,7 @@ menu :
         jump scene_loup
         
 label scene_chat:
-    play sound "Sons/scene_cat.ogg"
+    play music "Sons/scene_cat.ogg"
     scene chemin chat
     show aelita rassuree at left
     
@@ -173,6 +172,7 @@ label scene_chat:
     hide chat
     hide aelita rassuree
     hide chemin chat
+    play music "Sons/scene_cat.ogg"
     scene jour
     show parents at left
     
@@ -188,7 +188,7 @@ label scene_chat:
     
     scene nuit
     
-    play sound "Sons/nuit.ogg"
+    play music "Sons/nuit.ogg"
     "La petite fille est heureuse de retrouver sa famille. Avant de se coucher,sa maman décide de lire son histoire préférée. Grace à son histoire préférée, elle comprend enfin qu'il faut faire attentions aux apparances."
     
     return
@@ -197,7 +197,7 @@ label scene_loup:
     scene foret
     show aelita frissonnante at left
     show loup at right
-    play sound "Sons/scene_chien.ogg"
+    play music "Sons/scene_chien.ogg"
     a "J'ai froid"
     
     lo "Ne t'inquiète pas ... On est bientôt arrivés."

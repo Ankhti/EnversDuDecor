@@ -3,6 +3,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 *.exe
 log.txt
+errors.txt
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
